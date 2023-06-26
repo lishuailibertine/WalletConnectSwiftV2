@@ -33,7 +33,7 @@ public class ConsoleLogger: ConsoleLogging {
     public func debug(_ items: Any...) {
         if loggingLevel >= .debug {
             items.forEach {
-                Swift.print("\(suffix) \($0) - \(logFormattedDate(Date()))")
+//                Swift.print("\(suffix) \($0) - \(logFormattedDate(Date()))")
             }
         }
     }
@@ -41,7 +41,7 @@ public class ConsoleLogger: ConsoleLogging {
     public func info(_ items: Any...) {
         if loggingLevel >= .info {
             items.forEach {
-                Swift.print("\(suffix) \($0)")
+//                Swift.print("\(suffix) \($0)")
             }
         }
     }
@@ -49,7 +49,7 @@ public class ConsoleLogger: ConsoleLogging {
     public func warn(_ items: Any...) {
         if loggingLevel >= .warn {
             items.forEach {
-                Swift.print("\(suffix) ⚠️ \($0)")
+//                Swift.print("\(suffix) ⚠️ \($0)")
             }
         }
     }
@@ -57,7 +57,7 @@ public class ConsoleLogger: ConsoleLogging {
     public func error(_ items: Any...) {
         if loggingLevel >= .error {
             items.forEach {
-                Swift.print("\(suffix) ‼️ \($0)")
+//                Swift.print("\(suffix) ‼️ \($0)")
             }
         }
     }
